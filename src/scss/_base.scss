@@ -37,16 +37,6 @@ main{
 	}
 }
 
-.my-30{
-	margin-top: 30px;
-	margin-bottom: 30px;
-}
-
-.py-30{
-	padding-top: 30px;
-	padding-bottom: 30px;
-}
-
 .form-label-group{
 	position: relative;
 	margin-bottom: 1rem;
@@ -55,15 +45,19 @@ main{
 .form-control{
 	border: none;
 	border-bottom: $input-border-width solid $input-border-color;
-	letter-spacing: 1px;
+	letter-spacing: 1.3px;
 	&::placeholder{
 		text-transform: uppercase;
 	}
 }
 
 .contacts{
-	margin: -8px 0 0;
-	position: relative;
+	padding: 30px 0;
+	form{
+		margin: -8px 0 0;
+		position: relative;
+		padding: 0 0 0 2px;
+	}
 	.form-group{
 		&:last-child{
 			margin-bottom: 0;
@@ -76,7 +70,7 @@ main{
 		color: $heading-font-color;
 		font-size: $heading-font-size;
 		font-weight: 500;
-		margin: 0 0 25px;
+		margin: 0 0 18px;
 	}
 }
 
@@ -90,14 +84,26 @@ main{
 	}
 }
 
-.custom-control-input:checked~.custom-control-label {
-	&::after {
+.skils{
+	padding-top: 35px;
+	.custom-control{
+		margin: 0 0 35px;
 	}
 }
 
-.skils{
-	padding-top: 30px;
-	.custom-control{
-		margin: 0 0 40px;
+.skils-level{
+	padding: 50px 0 48px;
+	&__icon{
+		width: 255px;
+	}
+	.main-title{
+		padding: 15px 0 12px;
+	}
+	&__counter{
+		font-size: 50px;
+		letter-spacing: 3px;
+		line-height: 22px;
+		color: #0093d7;
+		font-weight: 900;
 	}
 }
