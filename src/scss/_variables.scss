@@ -1,0 +1,21 @@
+// stylelint-disable scss/dollar-variable-empty-line-before
+
+// COLORS
+
+$color-black: #000;
+$color-white: #fff;
+$body-color: #666666;
+$body-bg: #f0f0f0;
+
+// FONTS
+$font-family-roboto: 'Roboto',sans-serif;
+$body-font-size: 12px;
+$heading-font-size: 18px;
+
+// BOOTSTRAP
+$grid-columns: 8;
+$grid-gutter-width: 40px;
+$container-max-widths: (
+	sm: 540px,
+	md: 660px,
+	) !default;

@@ -1,0 +1,16 @@
+extends pug/base
+
+append vars
+
+block content
+	main
+		section.container
+			.row
+				.col-auto.avatar
+					figure.avatar__user(
+						style={
+							'background-image': 'url(images/avatar.jpg)'
+						}
+					)
+
+
