@@ -5,12 +5,28 @@ append vars
 block content
 	main
 		section.container
-			.row
+			.row.py-30
 				.col-auto.avatar
 					figure.avatar__user(
 						style={
 							'background-image': 'url(images/avatar.jpg)'
 						}
 					)
+
+				.col
+					form.contacts(action="#")
+						.form-group
+							input.form-control(type="text" placeholder="Имя")
+						.form-group
+							input.form-control(type="text" placeholder="Дата рождения")
+						.form-group
+							input.form-control(type="text" placeholder="Город")
+						.form-group
+							input.form-control(type="text" placeholder="Контактные данные")
+
+		section.container
+			.main-title
+				h1
+					| Навыки
 
 

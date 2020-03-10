@@ -11,11 +11,29 @@ $body-bg: #f0f0f0;
 $font-family-roboto: 'Roboto',sans-serif;
 $body-font-size: 12px;
 $heading-font-size: 18px;
+$heading-font-color: #010101;
 
 // BOOTSTRAP
 $grid-columns: 8;
-$grid-gutter-width: 40px;
+$grid-gutter-width: 20px;
 $container-max-widths: (
 	sm: 540px,
 	md: 660px,
 	) !default;
+
+// BOOTSTRAP INPUTS
+$input-font-size: 12px;
+$input-font-weight: 500;
+$input-color: $body-color;
+$input-bg: transparent;
+$input-border-width: 2px;
+$input-border-color: #333333;
+$input-border-radius: 0;
+$input-padding-x: 0;
+$input-padding-y: 0;
+$input-height: 29px;
+$input-focus-box-shadow: none;
+$input-focus-border-color: #0093d7;
+
+//Form group
+ $form-group-margin-bottom: 1.7rem;
