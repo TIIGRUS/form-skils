@@ -34,6 +34,15 @@ main {
 		height: 138px;
 		background-position: center;
 		background-size: cover;
+		transform: scale(1, 1);
+		transition: 0.3s ease-out;
+		transition-property: transform;
+	}
+
+	@include hover-focus {
+		.avatar__user {
+			transform: scale(1.05, 1.05);
+		}
 	}
 }
 
@@ -69,6 +78,7 @@ main {
 		position: absolute;
 		right: -2px;
 		bottom: 17px;
+		z-index: 1;
 		width: 160px;
 		transform: scale(1.2);
 	}
