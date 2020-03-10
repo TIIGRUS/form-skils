@@ -6,24 +6,24 @@ block content
 	main
 		section.container
 			.contacts
+				+svg("stamp").stamp
 				.row
-					.col-auto.avatar
+					.avatar.col-sm-auto.col-12
 						figure.avatar__user(
 							style={
 								'background-image': 'url(images/avatar.jpg)'
 							}
 						)
-
 					.col
 						form(action="#")
 							.form-group
-								input.form-control(type="text" placeholder="Имя")
+								input.form-control(type="text" value="Владимир")
 							.form-group
-								input.form-control(type="text" placeholder="Дата рождения")
+								input.form-control(type="text" value="15.03.1994")
 							.form-group
-								input.form-control(type="text" placeholder="Город")
+								input.form-control(type="text" value="Кишинев")
 							.form-group
-								input.form-control(type="text" placeholder="Контактные данные")
+								input.form-control(type="text" value="t.me/tiigrus")
 
 		section.container
 			.skils
@@ -31,35 +31,35 @@ block content
 					h1
 						| Навыки
 				.row
-					.col-2
+					.col-sm-2.col-4
 						.custom-control.custom-checkbox
-							input(type="checkbox" class="custom-control-input" id="html5")
+							input(type="checkbox" class="custom-control-input" checked id="html5")
 							label.custom-control-label(for="html5")
 								| Html5
 						.custom-control.custom-checkbox
-							input(type="checkbox" class="custom-control-input" id="css3")
+							input(type="checkbox" class="custom-control-input" checked id="css3")
 							label.custom-control-label(for="css3")
 								| css3
 						.custom-control.custom-checkbox
-							input(type="checkbox" class="custom-control-input" id="bem")
+							input(type="checkbox" class="custom-control-input" checked id="bem")
 							label.custom-control-label(for="bem")
 								| БЭМ
 
-					.col-2
+					.col-sm-2.col-4
 						.custom-control.custom-checkbox
 							input(type="checkbox" class="custom-control-input" checked id="sass")
 							label.custom-control-label(for="sass")
 								| SASS
 						.custom-control.custom-checkbox
-							input(type="checkbox" class="custom-control-input" id="less")
+							input(type="checkbox" class="custom-control-input" checked id="less")
 							label.custom-control-label(for="less")
 								| LESS
 						.custom-control.custom-checkbox
-							input(type="checkbox" class="custom-control-input" id="gulp")
+							input(type="checkbox" class="custom-control-input" checked id="gulp")
 							label.custom-control-label(for="gulp")
 								| gulp
 
-					.col-2
+					.col-sm-2.col-4
 						.custom-control.custom-checkbox
 							input(type="checkbox" class="custom-control-input" id="vanillaJs")
 							label.custom-control-label(for="vanillaJs")
@@ -69,13 +69,13 @@ block content
 							label.custom-control-label(for="angular")
 								| angular
 						.custom-control.custom-checkbox
-							input(type="checkbox" class="custom-control-input" id="JQUERY")
+							input(type="checkbox" class="custom-control-input" checked id="JQUERY")
 							label.custom-control-label(for="JQUERY")
 								| JQUERY
 
-					.col-2
+					.col-sm-2.col-4
 						.custom-control.custom-checkbox
-							input(type="checkbox" class="custom-control-input" id="git")
+							input(type="checkbox" class="custom-control-input" checked id="git")
 							label.custom-control-label(for="git")
 								| GIT
 						.custom-control.custom-checkbox
@@ -83,16 +83,16 @@ block content
 							label.custom-control-label(for="foundation")
 								| fOUNDATION
 						.custom-control.custom-checkbox
-							input(type="checkbox" class="custom-control-input" id="bootstrap")
+							input(type="checkbox" class="custom-control-input" checked id="bootstrap")
 							label.custom-control-label(for="bootstrap")
 								| BOOTSTRAP
 
 		section.container
 			.skils-level
 				.row
-					.col-4
+					.col-sm-4.order-sm-first.order-last
 						+svg("meter").skils-level__icon
-					.col-3
+					.col-lg-3.col-sm
 						.main-title
 							h2
 								| Мой уровень владения Java Script
