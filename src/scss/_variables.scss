@@ -4,30 +4,33 @@
 
 $color-black: #000;
 $color-white: #fff;
-$body-color: #666666;
+$body-color: #666;
 $body-bg: #f0f0f0;
 
 // FONTS
-$font-family-roboto: 'Roboto',sans-serif;
+
+$font-family-roboto: "Roboto",sans-serif;
 $body-font-size: 12px;
 $heading-font-size: 18px;
 $heading-font-color: #010101;
 
 // BOOTSTRAP
+
 $grid-columns: 8;
 $grid-gutter-width: 20px;
 $container-max-widths: (
 	sm: 540px,
 	md: 660px,
-	) !default;
+);
 
 // BOOTSTRAP INPUTS
+
 $input-font-size: 12px;
 $input-font-weight: 500;
 $input-color: $body-color;
 $input-bg: transparent;
 $input-border-width: 2px;
-$input-border-color: #333333;
+$input-border-color: #333;
 $input-border-radius: 0;
 $input-padding-x: 0;
 $input-padding-y: 0;
@@ -35,11 +38,12 @@ $input-height: 29px;
 $input-focus-box-shadow: none;
 $input-focus-border-color: #0093d7;
 $custom-control-indicator-size: 1.2rem;
-$custom-control-indicator-bg: #eeeeee;
+$custom-control-indicator-bg: #eee;
 $custom-control-indicator-border-width: 0;
 $custom-control-indicator-checked-bg: #0093d7;
 $custom-checkbox-indicator-icon-checked: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 12" width="15" height="12"><g id="2"> <g id="Checkboxes"> <g id="css"> <path id="Shape 6 copy" class="shp0" fill="#fff" d="M1 7.2L2.68 6L6 9.8L4.32 11L1 7.2ZM5.2 11L4 9.32L12.8 1L14 2.68L5.2 11Z"/> </g> </g> </g> </svg>');
 $custom-control-indicator-bg-size: 80%;
 
-//Form group
- $form-group-margin-bottom: 1.66rem;
+// FORM GROUP
+
+$form-group-margin-bottom: 1.66rem;
