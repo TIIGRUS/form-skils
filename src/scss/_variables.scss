@@ -42,7 +42,8 @@ $custom-control-indicator-size: 1.2rem;
 $custom-control-indicator-bg: #eee;
 $custom-control-indicator-border-width: 0;
 $custom-control-indicator-checked-bg: #0093d7;
-$custom-checkbox-indicator-icon-checked: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 12" width="15" height="12"><g id="2"> <g id="Checkboxes"> <g id="css"> <path id="Shape 6 copy" class="shp0" fill="#fff" d="M1 7.2L2.68 6L6 9.8L4.32 11L1 7.2ZM5.2 11L4 9.32L12.8 1L14 2.68L5.2 11Z"/> </g> </g> </g> </svg>');
+$custom-control-indicator-checked-color: #fff;
+$custom-checkbox-indicator-icon-checked: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 15 12' width='15' height='12'%3E%3Cg%3E%3Cg%3E%3Cg%3E%3Cpath fill='#{$custom-control-indicator-checked-color}' d='M1 7.2L2.68 6L6 9.8L4.32 11L1 7.2ZM5.2 11L4 9.32L12.8 1L14 2.68L5.2 11Z'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 $custom-control-indicator-bg-size: 80%;
 
 // FORM GROUP
