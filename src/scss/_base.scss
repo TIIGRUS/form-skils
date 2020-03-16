@@ -82,6 +82,51 @@ main {
 		width: 160px;
 		height: 180px;
 		transform: scale(1.2);
+		opacity: 0;
+		z-index: -1;
+		transition: all 0.3s linear;
+		&.is-active{
+			animation-delay: 0ms;
+			opacity: 1;
+			z-index: 1;
+			animation: bounceIn 500ms;
+		}
+
+		@keyframes bounceIn {
+
+			from,
+			20%,
+			60%,
+			80%,
+			to {
+				-webkit-animation-timing-function: cubic-bezier(1, 0, 1, 1);
+				animation-timing-function: cubic-bezier(1, 0, 1, 1);
+				transform-origin: center;
+			}
+
+			0% {
+				opacity: 0;
+				-webkit-transform: scale(2);
+				transform: rotate(10deg) scale(2);
+			}
+
+			60% {
+				opacity: 1;
+				-webkit-transform: scale(0.95);
+				transform: scale(0.95);
+			}
+
+			80% {
+				-webkit-transform: scale(0.9, 0.9);
+				transform: scale(0.9, 0.9);
+			}
+
+			to {
+				opacity: 1;
+				-webkit-transform: scale(1, 1);
+				transform: scale(1, 1);
+			}
+		}
 	}
 }
 
@@ -141,8 +186,6 @@ main {
 }
 
 #meter__arrow {
-	// transform: rotate(56deg);
-	// transform-origin: 51% 90%;
 	transition: all 0.3s linear;
 }
 
@@ -186,6 +229,7 @@ main {
 }
 
 @include media-breakpoint-down(xs) {
+
 	.main-title,
 	.skils-level__counter {
 		text-align: center;

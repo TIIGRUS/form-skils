@@ -1,26 +1,39 @@
 import './vendor';
 
-let count = 0;
-let checked = 0;
+let $count = 0;
+let $checked = 0;
 
 function countBoxes() {
-	count = $("input[type='checkbox']").length;
-	// console.log(count);
+	$count = $("input[type='checkbox']").length;
 }
 
 countBoxes();
 $(':checkbox').click(countBoxes);
 
 function countChecked() {
-	checked = $('input:checked').length;
-	let countStepArrow = parseInt(checked * 1.6 / count * 100, 10);
-	if (countStepArrow > 0) {
-		$('#meter__arrow').attr('transform', `rotate (${countStepArrow} 134 122)`);
-	} else if (countStepArrow === 0) {
-		$('#meter__arrow').attr('transform', 'rotate (-35 134 122)');
+	$checked = $('input:checked').length;
+	let $meterArrow = '#meter__arrow';
+
+	let $countStepArrow = parseInt($checked * 2.25 / $count * 100, 10);
+	$($meterArrow).attr('transform', `rotate (${$countStepArrow} 125 111)`);
+
+	// counter number
+	$('.skils-level__counter').html($countStepArrow);
+	if ($countStepArrow < 60) {
+		$('.skils-level__counter').css('color', '#ffc815');
+	} else if ($countStepArrow < 160) {
+		$('.skils-level__counter').css('color', '#a3cd3b');
+	} else {
+		$('.skils-level__counter').css('color', '#0093d7');
 	}
-	$('.skils-level__counter').html(countStepArrow);
+
+	// stamp class active
+	if ($countStepArrow >= 160) {
+		$('.stamp').addClass('is-active');
+	} else {
+		$('.stamp').removeClass('is-active');
+	}
 }
 
 countChecked();
-$(':checkbox').click(countChecked);
+$(':checkbox').on('click', countChecked);
