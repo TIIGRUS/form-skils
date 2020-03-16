@@ -140,11 +140,11 @@ main {
 	}
 }
 
-// #meter__arrow {
-// 	// transform: rotate(56deg);
-// 	// transform-origin: 51% 90%;
-// 	// transition: all 0.3s linear;
-// }
+#meter__arrow {
+	// transform: rotate(56deg);
+	// transform-origin: 51% 90%;
+	transition: all 0.3s linear;
+}
 
 @include media-breakpoint-down(sm) {
 	main {
