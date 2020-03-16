@@ -183,6 +183,12 @@ main {
 	transition: all 0.3s linear;
 }
 
+@include media-breakpoint-down(md){
+	.container__contacts {
+		overflow: hidden;
+	}
+}
+
 @include media-breakpoint-down(sm) {
 	main {
 		margin: 0;
