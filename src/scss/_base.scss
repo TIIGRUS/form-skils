@@ -181,7 +181,6 @@ main {
 
 #meter__arrow {
 	transition: transform 0.25s ease-in-out;
-	transform-origin: center;
 }
 
 @include media-breakpoint-down(md) {
