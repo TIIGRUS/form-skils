@@ -2333,7 +2333,7 @@ main {
   margin-bottom: 2px;
   padding-right: 20px;
   padding-left: 20px;
-  background: url("images/container-bg.jpg") repeat center;
+  background: url("../images/container-bg.jpg") repeat center;
   -webkit-background-size: cover;
      -moz-background-size: cover;
           background-size: cover; }
