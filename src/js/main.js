@@ -15,7 +15,7 @@ function countChecked() {
 	let $meterArrow = '#meter__arrow';
 	let $countStepArrow = parseInt($checked * 2.25 / $count * 100, 10);
 
-	$($meterArrow).attr('transform', `rotate (${$countStepArrow} 125 111)`);
+	$($meterArrow).attr('transform', `rotate (${$countStepArrow})`);
 
 	// counter number
 	$('.skils-level__counter').html($countStepArrow);
