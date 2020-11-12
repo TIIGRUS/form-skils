@@ -180,7 +180,7 @@ main {
 }
 
 #meter__arrow {
-	transition: transform 0.25s ease-in-out;
+	transition: transform 0.25s linear;
 	transform-origin: 50% 84%;
 }
 
